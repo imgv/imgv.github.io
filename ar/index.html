@@ -13,6 +13,8 @@
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+            <a-asset-item id="tank-obj" src="https://imgv.github.io/water-tank.obj"></a-asset-item>
+            <a-asset-item id="tank-mtl" src="https://imgv.github.io/water-tank.mtl"></a-asset-item>
         </a-assets>
 
         <a-marker type='barcode' value='7'>
@@ -27,11 +29,6 @@
         </a-marker>
 
         <a-marker id="water-tank" type='barcode' value='5'>
-            <a-assets>
-                <a-asset-item id="tank-obj" src="../water-tank.obj"></a-asset-item>
-                <a-asset-item id="tank-mtl" src="../water-tank.mtl"></a-asset-item>
-              </a-assets>
-            
               <a-entity obj-model="obj: #tank-obj; mtl: #tank-mtl"></a-entity>
         </a-marker>
 
